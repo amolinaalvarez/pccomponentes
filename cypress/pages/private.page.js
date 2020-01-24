@@ -4,7 +4,7 @@ class LandingPage {
     return cy.get('.qa-user-login-button')
   }
 
-  getMyAccountLink(fieldName) {
+  getMyAccountMenuLink(fieldName) {
     return cy.get('.qa-user-login-sub-1')
   }
 

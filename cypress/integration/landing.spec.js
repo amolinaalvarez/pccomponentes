@@ -1,6 +1,6 @@
 import LandingPage from '../pages/landing.page'
 
-describe('Landing page tests', () => {
+describe('Landing', () => {
 
   const landingPage = new LandingPage()
 
@@ -21,7 +21,7 @@ describe('Landing page tests', () => {
     cy.visit('/')
   })
 
-  xit('Should go to the login page', () => {
+  it('Should go to the login page', () => {
     landingPage.getLoginLink().should('be.visible').click()
     cy.url().should('eq', `${Cypress.config().baseUrl}/login`)
   });
