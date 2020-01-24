@@ -1,0 +1,30 @@
+{
+  "name": "pccomponentes",
+  "version": "0.0.1",
+  "description": "PcComponentes functional tests: login",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint cypress",
+    "lint:json": "eslint --ext .json cypress",
+    "cypress:verify": "cypress verify",
+    "cypress:version": "cypress version",
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "test",
+    "cypress"
+  ],
+  "author": "Álvaro Molina Álvarez",
+  "license": "ISC",
+  "devDependencies": {
+    "@cypress/eslint-plugin-dev": "^5.0.0",
+    "cypress": "^3.8.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-cypress": "^2.8.1",
+    "eslint-plugin-json-format": "^2.0.1",
+    "eslint-plugin-mocha": "^6.2.2",
+    "faker": "^4.1.0"
+  }
+}
